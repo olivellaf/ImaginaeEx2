@@ -16,7 +16,7 @@ public class ImaginaeAppEx2 {
      */
     public static void main(String[] args) {
         
-        int[] starter_arr = new int[1001];
+        int[] starter_arr = new int[1000];
         int[] second_arr = new int[100];
         
         int[] pares_arr = new int[100];
@@ -25,9 +25,9 @@ public class ImaginaeAppEx2 {
         int[] third_arr = new int[100];
         
         // Array que contenga un conjunto numerico del 1 al 1000
-        for (int i=1; i<starter_arr.length; i++) {
-            starter_arr[i] = i;
-//            System.out.println(i);
+        for (int i=0; i<starter_arr.length; i++) {
+            starter_arr[i] = 1+i;
+//            System.out.println(starter_arr[i]);
         } 
         
         // De este array, debemos obtener los 100 últimos y asignarlos a otro Array nuevo pero en orden inverso.
@@ -35,7 +35,7 @@ public class ImaginaeAppEx2 {
         for (int i = starter_arr.length-1; i >= starter_arr.length-100-1; i--) {
             if (j < second_arr.length) {
                 second_arr[j] = starter_arr[i];
-                //System.out.println(second_arr[j] + " j: " + j);
+//                System.out.println(second_arr[j] + " j: " + j);
             }
             j++;
         }
@@ -71,7 +71,7 @@ public class ImaginaeAppEx2 {
             
             if (resta >= 0) {
                 third_arr[t] = resta;
-                System.out.println("Tercero array - Núm. añadido: " + third_arr[t]);
+                System.out.println("Tercer array - Núm. añadido: " + third_arr[t]);
                 t++;
             }
         }
